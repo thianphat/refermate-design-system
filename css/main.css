@@ -466,7 +466,7 @@ code {
 }
 .nav__list {
   white-space: nowrap;
-  font-family: var(--ff-2);
+  font-family: "Roobert", sans-serif;
   justify-content: start;
   font-weight: var(--fw-light);
   list-style: none;
