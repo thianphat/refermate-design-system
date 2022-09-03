@@ -20,6 +20,27 @@
 }
 
 @font-face {
+  font-family: "Roobert";
+  src: url(../fonts/roobert/Roobert-Bold.otf) format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roobert";
+  src: url(../fonts/roobert/Roobert-Bold.otf) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roobert";
+  src: url(../fonts/roobert/Roobert-Bold.otf) format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Aeonik";
   src: url(../fonts/aeonik/Aeonik-AirItalic.otf) format("opentype");
   font-weight: 100;
@@ -121,6 +142,27 @@
 @font-face {
   font-family: "MADE Outer Sans";
   src: url("../fonts/made-outer-sans");
-  font-weight: 100 1000;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MADE Outer Sans";
+  src: url("../fonts/made-outer-sans");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MADE Outer Sans";
+  src: url("../fonts/made-outer-sans");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MADE Outer Sans";
+  src: url("../fonts/made-outer-sans");
+  font-weight: 400;
   font-style: normal;
 }
