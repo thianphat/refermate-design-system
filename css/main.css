@@ -60,6 +60,8 @@ Breakpoint Argument Choices:
   --btn-secondary-font-icon-outline: rgba(126, 123, 123, 1);
   --clr-font-pre-title: #979797;
   --rad-std: 4px;
+  --fw-air: 100;
+  --fw-x-light: 200;
   --fw-light: 300;
   --fw-reg: 400;
   --fw-strong: 500;
@@ -466,7 +468,7 @@ code {
 }
 .nav__list {
   white-space: nowrap;
-  font-family: "Roobert", sans-serif;
+  font-family: var(--ff-2);
   justify-content: start;
   font-weight: var(--fw-light);
   list-style: none;
