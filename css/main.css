@@ -52,6 +52,7 @@ Breakpoint Argument Choices:
   --primary-content: #F9FAFB;
   --ff-1: "Aeonik", sans-serif;
   --ff-2: "Roobert", sans-serif;
+  --ff-3: "Made Outer Sans", sans-serif;
   --ff-pre-title: "Roobert", sans-serif;
   --font-logo-merchant: "Made Outer Sans", sans-serif;
   --padding-section: 2rem 4rem;
@@ -351,8 +352,8 @@ code {
 
 .title {
   color: var(--primary-black);
-  font-family: var(--font-logo-merchant);
-  font-weight: 400;
+  font-family: var(--ff-3);
+  font-weight: var(--fw-light);
   font-size: 2rem;
   justify-content: start;
   padding: var(--padding-section);
