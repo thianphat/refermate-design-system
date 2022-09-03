@@ -466,6 +466,12 @@ code {
   margin-block: 2rem;
   overflow-x: auto;
 }
+@media only screen and (max-width: 37.5em) {
+  .nav {
+    margin-block: 0;
+    font-size: 3rem;
+  }
+}
 .nav__list {
   white-space: nowrap;
   font-family: var(--ff-2);
@@ -503,6 +509,13 @@ code {
   justify-items: start;
   gap: 4rem;
   flex-wrap: wrap;
+}
+@media only screen and (max-width: 37.5em) {
+  .content__group {
+    flex-wrap: initial;
+    overflow-x: auto;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
