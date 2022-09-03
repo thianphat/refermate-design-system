@@ -37,11 +37,11 @@
 <main>
   <!--    Content-->
   <section class="content">
+    <h2 class="content__title">Primary</h2>
     <div class="content__group">
       <div class="btn__card">
-        <h3 class="btn__card__title u-margin-bottom-sm u-subs-modals">Primary Button<span
-                class="btn__card__subtitle">Regular, No
-                                                                                                 Icons</span>
+        <h3 class="btn__card__title u-margin-bottom-sm u-subs-modals">Regular / No Icons
+
         </h3>
         <div class="btn__container u-margin-bottom-sm">
 
@@ -62,14 +62,48 @@ font-size: var(--fs-btn-reg);</code></pre>
         <p class="btn__instructions u-margin-bottom-sm">
           Used here:
         </p>
-        <ul class="u-flex-column u-list u-margin-bottom-medium">
-          <li class="u-list__item">Top of Merchant Pages</li>
-          <li class="u-list__item">Product Price Cards</li>
+        <ul class="u-flex-column u-list">
+          <li class="u-list__item">Activate Rewards</li>
+          <li class="u-list__item">Buy Now (Products)</li>
         </ul>
       </div>
 
 
-      <button class="btn btn__secondary btn__secondary--reg">Secondary Button</button>
+
+    </div>
+    <h2 class="content__title">Secondary</h2>
+    <div class="content__group">
+      <div class="btn__card">
+        <h3 class="btn__card__title u-margin-bottom-sm u-subs-modals">Regular / No Icons
+
+        </h3>
+        <div class="btn__container u-margin-bottom-sm">
+
+          <button class="btn btn__secondary btn__secondary--reg">Secondary Button</button>
+        </div>
+        <pre><code class="language-css">
+/*Classes*/
+.btn .btn__primary .btn__primary--reg
+
+/*Raw*/
+border-radius: var(--rad-std);
+background-color: var(--primary-black);
+color: var(--primary-white);
+font-weight: var(--strong);
+padding: 1rem 2rem;
+font-size: var(--fs-btn-reg);</code></pre>
+
+        <p class="btn__instructions u-margin-bottom-sm">
+          Used here:
+        </p>
+        <ul class="u-flex-column u-list">
+          <li class="u-list__item">Favorite Store &hearts;</li>
+          <li class="u-list__item">Price Watch</li>
+        </ul>
+      </div>
+
+
+
     </div>
   </section>
 </main>
