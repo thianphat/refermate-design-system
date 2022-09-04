@@ -73,6 +73,7 @@ Breakpoint Argument Choices:
   --badge-timer-txt: #E11D48;
   --forms-placeholder-text: #C4C4C4;
   --pad-section: 2rem 4rem;
+  --pad-section-sml: 2rem 2.5rem;
   --pad-btn: 8px 16px;
   --pad-filter: 8px 8px;
   --pad-badge: .5px 8px;
@@ -419,6 +420,11 @@ body {
   padding: var(--pad-section);
   padding-block: 4rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .title {
+    padding: var(--pad-section-sml);
+  }
+}
 
 .categories {
   font-weight: 400;
@@ -435,7 +441,7 @@ body {
   flex-direction: column;
   color: var(--primary-black);
   padding: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 1px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   border-radius: 3px;
 }
 .color__header {
@@ -496,10 +502,15 @@ body {
   align-content: center;
   justify-content: center;
   border-radius: var(--rad-std);
-  box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 1px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   font-size: 2rem;
   padding: 4rem;
   width: 50rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .btn__card {
+    padding: var(--pad-section-sml);
+  }
 }
 .btn__card__subtitle {
   display: block;
@@ -529,6 +540,7 @@ body {
   .nav {
     margin-block: 0;
     font-size: 3rem;
+    padding: var(--pad-section-sml);
   }
 }
 .nav__list {
@@ -552,6 +564,11 @@ body {
 hr {
   margin: 0 4rem;
 }
+@media only screen and (max-width: 37.5em) {
+  hr {
+    margin: 0 2rem;
+  }
+}
 
 .content {
   margin-top: 2rem;
@@ -562,10 +579,22 @@ hr {
   gap: 4rem;
   padding: var(--pad-section);
 }
+@media only screen and (max-width: 37.5em) {
+  .content {
+    padding: var(--pad-section-sml);
+    margin-top: 1rem;
+    gap: 2rem;
+  }
+}
 .content__title {
   font-weight: 500;
   font-size: 4rem;
   color: var(--primary-black);
+}
+@media only screen and (max-width: 37.5em) {
+  .content__title {
+    font-size: 3rem;
+  }
 }
 .content__group {
   display: flex;
