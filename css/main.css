@@ -513,7 +513,6 @@ body {
 .nav {
   color: var(--primary-black);
   font-size: 4rem;
-  margin-block: 2rem;
   padding: var(--pad-section);
   overflow-x: auto;
 }
