@@ -50,12 +50,11 @@ Breakpoint Argument Choices:
   --ff-2: "Roobert", sans-serif;
   --ff-3: "Made Outer Sans", sans-serif;
   --primary-brand: #F08B7C;
-  --primary-black: #2D1416;
+  --primary-black: #190708;
   --primary-white: #fff;
-  --titles-subtitles-modaltitles: #2D1416;
-  --tertiary-secondary: #5E5E5E;
+  --titles-subtitles-modaltitles: #190708;
   --pre-title: #979797;
-  --body-paragraphs: #190708;
+  --body-paragraphs: #2D1416;
   --text-links: #2664CB;
   --old-prices: #c4c4c4;
   --btn-second-fill: rgba(243, 243, 243, 0.7);
@@ -396,14 +395,14 @@ body {
   font-family: var(--ff-1);
   font-weight: var(--fw-reg);
   font-size: var(--fs-tertiary-pre-title);
-  color: var(--tertiary-secondary);
+  color: var(--tertiary);
 }
 
 .u-pre-title {
   font-family: var(--ff-1);
   font-weight: var(--fw-bold);
   font-size: var(--fs-tertiary-pre-title);
-  color: var(--tertiary-secondary);
+  color: var(--tertiary);
   text-transform: uppercase;
 }
 
@@ -485,6 +484,18 @@ body {
   background-color: var(--primary-white);
   background-size: cover;
   border: 1px solid var(--primary-black);
+}
+.color__box--4 {
+  background-color: var(--titles-subtitles-modaltitles);
+  background-size: cover;
+}
+.color__box--5 {
+  background-color: var(--pre-title);
+  background-size: cover;
+}
+.color__box--6 {
+  background-color: var(--body-paragraphs);
+  background-size: cover;
 }
 
 /* Primary */
@@ -621,7 +632,6 @@ hr {
 }
 .content__card-title {
   font-weight: var(--fw-strong);
-  width: 80%;
   color: var(--titles-subtitles-modaltitles);
 }
 @media only screen and (max-width: 37.5em) {
@@ -642,7 +652,7 @@ hr {
 .content__card-instructions {
   display: inline-block;
   margin-top: 2rem;
-  color: var(--tertiary-secondary);
+  color: var(--titles-subtitles-modaltitles);
   font-size: var(--fs-content-title);
   font-weight: var(--fw-strong);
   margin-bottom: 0.5rem;
