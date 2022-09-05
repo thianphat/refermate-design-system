@@ -39,18 +39,15 @@
 <main>
     <!--    Content-->
     <section class="content">
-        <h2 class="content__title">Primary</h2>
+        <h2 class="content__row-title">Primary</h2>
         <div class="content__group">
-            <div class="btn__card">
-                <h3 class="btn__card__title u-margin-bottom-sm u-subs-modals">Regular / No Icons
-
+            <div class="content__card">
+                <h3 class="content__card-title u-margin-bottom-sm">Regular / No Icons
                 </h3>
-                <div class="btn__container u-margin-bottom-sm">
-
-                    <button class="btn btn__primary btn__primary--reg">Primary Button - Long Text!</button>
+                <div class="content__card-container u-margin-bottom-sm">
+                    <button class="btn btn__primary btn__primary--reg">Primary Button - Regular</button>
                 </div>
-                <pre><code class="language-css">
-/*Classes*/
+                <pre><code class="language-css">/*Classes*/
 .btn .btn__primary .btn__primary--reg
 
 /*Raw*/
@@ -61,25 +58,49 @@ font-weight: var(--strong);
 padding: 1rem 2rem;
 font-size: var(--fs-btn-reg);</code></pre>
 
-                <p class="btn__instructions u-margin-bottom-sm">
+                <p class="content__card-instructions">
                     Used here:
                 </p>
-                <ul class="u-flex-column u-list">
+                <ul class="u-flex-column u-list--card content__card-instructions--steps">
                     <li class="u-list__item">Activate Rewards</li>
                     <li class="u-list__item">Buy Now (Products)</li>
                 </ul>
             </div>
-
-
-        </div>
-        <h2 class="content__title">Secondary</h2>
-        <div class="content__group">
-            <div class="btn__card">
-                <h3 class="btn__card__title u-margin-bottom-sm u-subs-modals">Regular / No Icons
-
+<!--            Small - No Icons-->
+            <div class="content__card">
+                <h3 class="content__card-title u-margin-bottom-sm">Small / No Icons
                 </h3>
-                <div class="btn__container u-margin-bottom-sm">
+                <div class="content__card-container u-margin-bottom-sm">
+                    <button class="btn btn__primary btn__primary--reg">Primary Button - Small</button>
+                </div>
+                <pre><code class="language-css">/*Classes*/
+.btn .btn__primary .btn__primary--reg
 
+/*Raw*/
+border-radius: var(--rad-std);
+background-color: var(--primary-black);
+color: var(--primary-white);
+font-weight: var(--strong);
+padding: 1rem 2rem;
+font-size: var(--fs-btn-reg);</code></pre>
+
+                <p class="content__card-instructions">
+                    Used here:
+                </p>
+                <ul class="u-flex-column u-list--card content__card-instructions--steps">
+                    <li class="u-list__item">Activate Rewards</li>
+                    <li class="u-list__item">Buy Now (Products)</li>
+                </ul>
+            </div>
+        </div>
+
+<!--        Row 2-->
+        <h2 class="content__row-title">Secondary</h2>
+        <div class="content__group">
+            <div class="content__card">
+                <h3 class="content__card-title u-margin-bottom-sm">Regular / No Icons
+                </h3>
+                <div class="content__card-container u-margin-bottom-sm">
                     <button class="btn btn__secondary btn__secondary--reg">Secondary Button</button>
                 </div>
                 <pre><code class="language-css">
@@ -94,10 +115,10 @@ font-weight: var(--strong);
 padding: 1rem 2rem;
 font-size: var(--fs-btn-reg);</code></pre>
 
-                <p class="btn__instructions u-margin-bottom-sm">
+                <p class="content__card-instructions">
                     Used here:
                 </p>
-                <ul class="u-flex-column u-list">
+                <ul class="u-flex-column u-list--card content__card-instructions--steps">
                     <li class="u-list__item">Favorite Store &hearts;</li>
                     <li class="u-list__item">Price Watch</li>
                 </ul>
