@@ -192,12 +192,25 @@ select {
   display: none !important;
 }
 
+/* Screen Reader Utility Class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
 /*------------------*/
 /* End Global Reset */
 /*------------------*/
 body {
   font-family: var(--ff-1);
-  background-color: #F9FAFB;
+  background-color: white;
   color: var(--primary-black);
   overflow-x: hidden;
 }
@@ -418,7 +431,7 @@ body {
   font-size: 2rem;
   justify-content: start;
   padding: var(--pad-section);
-  padding-block: 4rem;
+  padding-block: 2rem;
 }
 @media only screen and (max-width: 37.5em) {
   .title {
@@ -500,16 +513,25 @@ body {
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: center;
+  justify-content: start;
   border-radius: var(--rad-std);
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   font-size: 2rem;
   padding: 4rem;
   width: 50rem;
+  height: max-content;
+  white-space: nowrap;
+  background-color: var(--content-main);
 }
 @media only screen and (max-width: 37.5em) {
   .btn__card {
     padding: var(--pad-section-sml);
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .btn__card__title {
+    font-size: 2.5rem;
   }
 }
 .btn__card__subtitle {
@@ -519,21 +541,27 @@ body {
 .btn__instructions {
   display: inline-block;
   margin-top: 3rem;
-  font-size: 3rem;
+  font-size: var(--fs-content-title);
+  font-weight: var(--fw-strong);
 }
 .btn__container {
   display: flex;
   align-content: center;
   justify-content: center;
   height: 20rem;
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+pre {
+  height: 25%;
 }
 
 .nav {
   color: var(--primary-black);
   font-size: 4rem;
-  padding: var(--pad-section);
   margin-block: 2rem;
+  padding: var(--pad-section);
   overflow-x: auto;
 }
 @media only screen and (max-width: 37.5em) {
@@ -552,12 +580,15 @@ body {
   gap: 4rem;
   text-decoration: none;
 }
+.nav__active {
+  font-weight: var(--fw-bold);
+}
 .nav__link:link, .nav__link:visited {
   text-decoration: none;
   color: var(--primary-black);
   transition: all 0.2s;
 }
-.nav__link:hover, .nav__link:active {
+.nav__link:hover, .nav__link:focus {
   font-weight: 400;
 }
 
@@ -575,7 +606,6 @@ hr {
   border-radius: 3px;
   justify-items: start;
   display: grid;
-  background-color: var(--content-main);
   gap: 4rem;
   padding: var(--pad-section);
 }
@@ -598,7 +628,6 @@ hr {
 }
 .content__group {
   display: flex;
-  justify-items: start;
   gap: 4rem;
   flex-wrap: wrap;
 }
