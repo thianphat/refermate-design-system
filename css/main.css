@@ -599,7 +599,7 @@ hr {
 }
 .content__group {
   display: flex;
-  gap: 4rem;
+  gap: 2.5rem;
   flex-wrap: wrap;
 }
 @media only screen and (max-width: 56.25em) {
@@ -607,6 +607,7 @@ hr {
     flex-wrap: initial;
     overflow-x: auto;
     width: 100%;
+    gap: 1rem;
   }
 }
 .content__group::-webkit-scrollbar {
