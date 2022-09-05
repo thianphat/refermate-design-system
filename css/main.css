@@ -52,10 +52,10 @@ Breakpoint Argument Choices:
   --primary-brand: #F08B7C;
   --primary-black: #2D1416;
   --primary-white: #fff;
-  --titles-subtitles-modaltitles: #190708;
+  --titles-subtitles-modaltitles: #2D1416;
   --tertiary-secondary: #5E5E5E;
   --pre-title: #979797;
-  --body-paragraphs: #2D1416;
+  --body-paragraphs: #190708;
   --text-links: #2664CB;
   --old-prices: #c4c4c4;
   --btn-second-fill: rgba(243, 243, 243, 0.7);
@@ -481,6 +481,11 @@ body {
   background-color: var(--titles-subtitles-modaltitles);
   background-size: cover;
 }
+.color__box--3 {
+  background-color: var(--primary-white);
+  background-size: cover;
+  border: 1px solid var(--primary-black);
+}
 
 /* Primary */
 .btn {
@@ -599,15 +604,12 @@ hr {
 .content__card {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: start;
   border-radius: var(--rad-std);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   font-size: 2rem;
   width: min-content;
   padding: var(--pad-section);
   padding-bottom: 4rem;
-  height: max-content;
   margin: 0.5rem 0.5rem 3rem 0.5rem;
   background-color: var(--content-main);
 }
