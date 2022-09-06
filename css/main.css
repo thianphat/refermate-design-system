@@ -51,18 +51,18 @@ Breakpoint Argument Choices:
   --ff-3: "Made Outer Sans", sans-serif;
   --primary-brand: #F08B7C;
   --primary-black: #190708;
-  --primary-white: #fff;
-  --fc-titles-subtitles-modaltitles: #190708;
+  --primary-white: #FEFEFF;
+  --fc-titles-subs-modals: #190708;
   --fc-pre-title: #979797;
   --fc-body-paragraphs: #2D1416;
   --fc-text-links: #2664CB;
   --fc-old-prices: #c4c4c4;
   --btn-primary-fill: rgba(25, 7, 8, 1);
-  --btn-primary-text-icons: #fff;
+  --btn-primary-text-icons: var(--primary-white);
   --btn-second-fill: rgba(243, 243, 243, 0.7);
   --btn-second-txts-icons-outlines: rgba(126, 123, 123, 1);
-  --btn-tertiary: rgba(126, 123, 123, 1);
-  --btn-destructive-fill: #fff;
+  --btn-tertiary-txt-icons: rgba(126, 123, 123, 1);
+  --btn-destructive-fill: var(--primary-white);
   --btn-destructive-txt-icon-outline: rgba(254, 72, 80, 1);
   --btn-disabled-txt-icon: rgba(205, 209, 215, 1);
   --btn-disabled-fill: rgba(249, 250, 251, 1);
@@ -396,14 +396,14 @@ body {
   font-family: var(--font2);
   font-weight: var(--fw-reg);
   font-size: var(--fs-sub-title-modal);
-  color: var(--fc-titles-subtitles-modaltitles);
+  color: var(--fc-titles-subs-modals);
 }
 
 .u-content-title {
   font-family: var(--ff-1);
   font-weight: var(--fw-strong);
   font-size: var(--fs-content-title);
-  color: var(--fc-titles-subtitles-modaltitles);
+  color: var(--fc-titles-subs-modals);
 }
 
 .u-tertiary-title {
@@ -490,7 +490,7 @@ body {
 
 .u-btn__tertiary {
   background-color: transparent;
-  color: var(--btn-tertiary);
+  color: var(--btn-tertiary-txt-icons);
   font-weight: var(--fw-strong);
 }
 .u-btn__tertiary:hover {
@@ -577,7 +577,7 @@ body {
   background-size: cover;
 }
 .color__box--2 {
-  background-color: var(--fc-titles-subtitles-modaltitles);
+  background-color: var(--fc-titles-subs-modals);
   background-size: cover;
 }
 .color__box--3 {
@@ -586,7 +586,7 @@ body {
   border: 1px solid var(--primary-black);
 }
 .color__box--4 {
-  background-color: var(--fc-titles-subtitles-modaltitles);
+  background-color: var(--fc-titles-subs-modals);
   background-size: cover;
 }
 .color__box--5 {
@@ -595,6 +595,24 @@ body {
 }
 .color__box--6 {
   background-color: var(--fc-body-paragraphs);
+  background-size: cover;
+}
+.color__box--7 {
+  background-color: var(--btn-primary-fill);
+  background-size: cover;
+}
+.color__box--8 {
+  background-color: var(--btn-primary-text-icons);
+  background-size: cover;
+  border: 1px solid var(--primary-black);
+}
+.color__box--9 {
+  background-color: var(--btn-second-fill);
+  background-size: cover;
+  border: 1px solid var(--primary-black);
+}
+.color__box--10 {
+  background-color: var(--btn-second-txts-icons-outlines);
   background-size: cover;
 }
 
@@ -701,7 +719,7 @@ hr {
 .content__row-title {
   font-weight: 300;
   font-size: 4rem;
-  color: var(--fc-titles-subtitles-modaltitles);
+  color: var(--fc-titles-subs-modals);
 }
 @media only screen and (max-width: 37.5em) {
   .content__row-title {
@@ -749,7 +767,7 @@ hr {
 }
 .content__card-title {
   font-weight: var(--fw-strong);
-  color: var(--fc-titles-subtitles-modaltitles);
+  color: var(--fc-titles-subs-modals);
 }
 @media only screen and (max-width: 37.5em) {
   .content__card-title {
@@ -769,7 +787,7 @@ hr {
 .content__card-instructions {
   display: inline-block;
   margin-top: 2rem;
-  color: var(--fc-titles-subtitles-modaltitles);
+  color: var(--fc-titles-subs-modals);
   font-size: var(--fs-content-title);
   font-weight: var(--fw-strong);
   margin-bottom: 0.5rem;
