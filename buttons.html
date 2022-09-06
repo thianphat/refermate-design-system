@@ -24,109 +24,227 @@
     <nav class="nav">
         <ul class="nav__list u-flex-row">
             <li class="nav__item"><a href="index.html" class="nav__link">Colors</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Custom Variables</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Typography</a></li>
+            <li class="nav__item"><a href="custom-variables.html" class="nav__link">Custom Variables</a></li>
             <li class="nav__item nav__active"><a href="buttons.html" class="nav__link">Buttons</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Coupons</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Products</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Forms</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Main Nav</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Right Nav</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Logo</a></li>
         </ul>
     </nav>
     <hr>
 </header>
 
 <main>
-    <!--    Content-->
+    <!--    Primary Buttons -->
     <section class="content">
-        <h2 class="content__row-title">Primary</h2>
-        <div class="content__group">
-            <div class="content__card">
-                <h3 class="content__card-title u-margin-bottom-sm">Regular / No Icons
-                </h3>
-                <div class="content__card-container u-margin-bottom-sm">
-                    <button class="btn btn__primary btn__primary--reg">Primary Button - Regular</button>
-                </div>
-                <pre><code class="language-css">/*Classes*/
-.btn .btn__primary .btn__primary--reg
+        <h2 class="content__row-title">Base & Size Variations</h2>
+        <aside class="content__note">
+                        <pre><code class="language-css">/* Button Base */
 
-/*Raw*/
-border-radius: var(--rad-std);
-background-color: var(--primary-black);
-color: var(--primary-white);
-font-weight: var(--strong);
-padding: 1rem 2rem;
-font-size: var(--fs-btn-reg);</code></pre>
-
-                <p class="content__card-instructions">
-                    Used here:
-                </p>
-                <ul class="u-flex-column u-list--card content__card-instructions--steps">
-                    <li class="u-list__item">Activate Rewards</li>
-                    <li class="u-list__item">Buy Now (Products)</li>
-                </ul>
-            </div>
-<!--            Small - No Icons-->
-            <div class="content__card">
-                <h3 class="content__card-title u-margin-bottom-sm">Small / No Icons
-                </h3>
-                <div class="content__card-container u-margin-bottom-sm">
-                    <button class="btn btn__primary btn__primary--reg">Primary Button - Small</button>
-                </div>
-                <pre><code class="language-css">/*Classes*/
-.btn .btn__primary .btn__primary--reg
-
-/*Raw*/
-border-radius: var(--rad-std);
-background-color: var(--primary-black);
-color: var(--primary-white);
-font-weight: var(--strong);
-padding: 1rem 2rem;
-font-size: var(--fs-btn-reg);</code></pre>
-
-                <p class="content__card-instructions">
-                    Used here:
-                </p>
-                <ul class="u-flex-column u-list--card content__card-instructions--steps">
-                    <li class="u-list__item">Activate Rewards</li>
-                    <li class="u-list__item">Buy Now (Products)</li>
-                </ul>
-            </div>
-        </div>
-
-<!--        Row 2-->
-        <h2 class="content__row-title">Secondary</h2>
-        <div class="content__group">
-            <div class="content__card">
-                <h3 class="content__card-title u-margin-bottom-sm">Regular / No Icons
-                </h3>
-                <div class="content__card-container u-margin-bottom-sm">
-                    <button class="btn btn__secondary btn__secondary--reg">Secondary Button</button>
-                </div>
-                <pre><code class="language-css">
 /*Classes*/
-.btn .btn__primary .btn__primary--reg
+.u-btn
 
 /*Raw*/
+display: flex;
+cursor: pointer;
+justify-content: center;
+align-items: center;
+gap: .5rem;</code></pre>
+            <pre><code class="language-css">/*For: Tablets, Desktop*/
+
+/*Classes*/
+.u-btn--reg
+
+/*Raw*/
+font-size: var(--fs-btn-reg);
+padding: var(--pad-btn-reg);</code></pre>
+            <pre><code class="language-css">/*For: Mobile*/
+
+/*Classes*/
+.u-btn--sm
+
+/*Raw*/
+font-size: var(--fs-btn-sm);
+padding: var(--pad-btn-sm);</code></pre>
+        </aside>
+        <h2 class="content__row-title">Style Variations</h2>
+        <div class="content__group">
+            <div class="content__card">
+                <h3 class="content__card-title u-margin-bottom-sm">Primary
+                </h3>
+                <div class="content__card-container u-margin-bottom-sm">
+                    <button class="u-btn u-btn--reg u-btn__primary">Get Coupon</button>
+                </div>
+                <pre><code class="language-css">/*Classes*/
+.u-btn__primary
+
+/*Raw*/
+background-color: var(--btn-primary-fill);
+color: var(--btn-primary-text-icons);
 border-radius: var(--rad-std);
-background-color: var(--primary-black);
-color: var(--primary-white);
-font-weight: var(--strong);
-padding: 1rem 2rem;
-font-size: var(--fs-btn-reg);</code></pre>
+font-weight: var(--fw-strong);
+box-shadow: var(--btn-shadow);
+border: 1px solid transparent;
+&:hover {border: 1px solid var(--primary-white);</code></pre>
 
                 <p class="content__card-instructions">
-                    Used here:
+                    Use case:
+                </p>
+                <ul class="u-flex-column u-list--card content__card-instructions--steps">
+                    <li class="u-list__item">Activate Rewards</li>
+                    <li class="u-list__item">Buy Now (Products)</li>
+                    <li class="u-list__item">Grab Referral Links (on refer page only)</li>
+                    <li class="u-list__item">TBD</li>
+                </ul>
+            </div>
+            <div class="content__card">
+                <h3 class="content__card-title u-margin-bottom-sm">Secondary
+                </h3>
+                <div class="content__card-container u-margin-bottom-sm">
+                    <button class="u-btn u-btn--reg u-btn__secondary">Get Deal</button>
+                </div>
+                <pre><code class="language-css">/*Classes*/
+.u-btn__secondary
+
+/*Raw*/
+background-color: var(--btn-second-fill-fill);
+border-radius: var(--rad-std);
+color: var(--btn-second-txts-icons-outlines);
+font-weight: var(--fw-strong);
+box-shadow: var(--btn-shadow);
+border: 1px solid var(--btn-second-txts-icons-outlines);
+&:hover {border: 1px solid var(--primary-black);</code></pre>
+
+                <p class="content__card-instructions">
+                    Use case:
                 </p>
                 <ul class="u-flex-column u-list--card content__card-instructions--steps">
                     <li class="u-list__item">Favorite Store &hearts;</li>
                     <li class="u-list__item">Price Watch</li>
+                    <li class="u-list__item">Log Out</li>
+                    <li class="u-list__item">TBD</li>
                 </ul>
             </div>
+            <!--            Tertiary-->
+            <div class="content__group">
+                <div class="content__card">
+                    <h3 class="content__card-title u-margin-bottom-sm">Tertiary
+                    </h3>
+                    <div class="content__card-container u-margin-bottom-sm">
+                        <button class="u-btn u-btn--reg u-btn__tertiary">All Stores</button>
+                    </div>
+                    <pre><code class="language-css">/*Classes*/
+.u-btn__tertiary
 
+/*Raw*/
+background-color: transparent;
+color: var(--btn-tertiary);
+font-weight: var(--fw-strong);
+&:hover {color: var(--text-links);}</code></pre>
 
+                    <p class="content__card-instructions">
+                        Use case:
+                    </p>
+                    <ul class="u-flex-column u-list--card content__card-instructions--steps">
+                        <li class="u-list__item">Third Links</li>
+                        <li class="u-list__item">Top Nav Bar</li>
+                        <li class="u-list__item">TBD</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content__group">
+                <div class="content__card">
+                    <h3 class="content__card-title u-margin-bottom-sm">Destructive
+                    </h3>
+                    <div class="content__card-container u-margin-bottom-sm">
+                        <button class="u-btn u-btn__destructive u-btn--reg">Delete</button>
+                    </div>
+                    <pre><code class="language-css">/*Classes*/
+.u-btn__destructive
+
+/*Raw*/
+background-color: var(--btn-destructive-fill);
+border: 1px solid var(--btn-destructive-txt-icon-outline);
+border-radius: var(--rad-std);
+color: var(--btn-destructive-txt-icon-outline);
+font-weight: var(--fw-strong);
+box-shadow: var(--btn-shadow);
+&:hover {
+background-color: var(--btn-destructive-txt-icon-outline);
+color: var(--btn-destructive-fill);
+}</code></pre>
+
+                    <p class="content__card-instructions">
+                        Use case:
+                    </p>
+                    <ul class="u-flex-column u-list--card content__card-instructions--steps">
+                        <li class="u-list__item">Delete Items & Account</li>
+                    </ul>
+                </div>
+                <!--            Add above this line-->
+            </div>
+            <!--        Disabled Buttons-->
+            <div class="content__group">
+                <div class="content__card">
+                    <h3 class="content__card-title u-margin-bottom-sm">Disabled
+                    </h3>
+                    <div class="content__card-container u-margin-bottom-sm">
+                        <button class="u-btn u-btn u-btn__disabled u-btn--reg">Log in to Activate</button>
+                    </div>
+                    <pre><code class="language-css">/*Classes*/
+.u-btn__disabled
+
+/*Raw*/
+background-color: var(--btn-disabled-fill);
+border-radius: var(--rad-std);
+color: var(--btn-disabled-txt-icon);
+font-weight: var(--fw-strong);
+box-shadow: var(--btn-shadow);
+border: 1px solid transparent;
+&:hover {
+border: 1px solid var(--btn-disabled-txt-icon);
+}</code></pre>
+
+                    <p class="content__card-instructions">
+                        Use case:
+                    </p>
+                    <ul class="u-flex-column u-list--card content__card-instructions--steps">
+                        <li class="u-list__item">Gated CTAs</li>
+                        <li class="u-list__item">Logged Out Refer Buttons</li>
+                        <li class="u-list__item">TBD</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h2 class="content__row-title">Icon Variations</h2>
+        <div class="content__group">
+            <div class="content__card">
+                <h3 class="content__card-title u-margin-bottom-sm">Icons Regular
+                </h3>
+                <div class="content__card-container u-margin-bottom-sm">
+                    <button class="u-btn u-btn--reg u-btn__primary"><img class="u-btn__icon--reg"
+                                                                              src="img/icons/lightning.svg"
+                                                      alt="Button Icon Left">Activate</button>
+                </div>
+                <pre><code class="language-css">/*Classes*/
+.u-btn__disabled
+
+/*Raw*/
+height: 2.5rem;
+width: 2.5rem;</code></pre>
+            </div>
+            <div class="content__card">
+                <h3 class="content__card-title u-margin-bottom-sm">Icons Small
+                </h3>
+                <div class="content__card-container u-margin-bottom-sm">
+                    <button class="u-btn u-btn-disabled u-btn--sm">PriceWatch<img class="u-btn__icon--sm"
+                                                                                  src="img/icons/PriceWatch.png"
+                                                                                  alt="Button Icon Left"></button>
+                </div>
+                <pre><code class="language-css">/*Classes*/
+.u-btn__icon--sm
+
+/*Raw*/
+height: 2rem;
+width: 2rem;</code></pre>
+            </div>
         </div>
     </section>
 </main>

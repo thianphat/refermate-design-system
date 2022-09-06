@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="sass/themes/prism.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="prism.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <!--Title-->
+    <h1 class="title u-flex-row">
+        Refermate Design System
+    </h1>
+    <hr>
+    <!--Nav-->
+    <nav class="nav">
+        <ul class="nav__list u-flex-row">
+            <li class="nav__item"><a href="index.html" class="nav__link">Colors</a></li>
+            <li class="nav__item nav__active"><a href="custom-variables.html" class="nav__link">Custom Variables</a>
+            </li>
+            <li class="nav__item"><a href="buttons.html" class="nav__link">Buttons</a></li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+
+<main>
+    <section class="content">
+
+<!--        FONT FAMILIES -->
+
+        <h2 class="content__row-title">Font Families</h2>
+        <div class="content__group">
+            <pre><code class="language-css">--ff-1: "Aeonik", sans-serif;
+--ff-2: "Roobert", sans-serif;
+--ff-3: "Made Outer Sans", sans-serif;</code></pre>
+        </div>
+
+<!--        COLORS -->
+
+        <h2 class="content__row-title">Colors</h2>
+        <div class="content__group">
+            <pre><code class="language-css">//Primary
+--primary-brand: #F08B7C;
+--primary-black: #190708;
+--primary-white: #fff;
+
+//Titles, Subtitles, Paragraphs
+--titles-subtitles-modaltitles: #190708;
+--pre-title: #979797;
+--body-paragraphs: #2D1416;
+--text-links: #2664CB;
+--old-prices: #c4c4c4;
+
+//Buttons
+--btn-primary-fill: rgba(25, 7, 8, 1);
+--btn-primary-text-icons: #fff;
+--btn-second-fill: rgba(243, 243, 243, 0.7);;
+--btn-second-txts-icons-outlines: rgba(126, 123, 123, 1);
+--btn-tertiary: rgba(126, 123, 123, 1);
+--btn-destructive-fill: #fff;
+--btn-destructive-txt-icon-outline: rgba(254, 72, 80, 1);
+--btn-disabled-txt-icon: rgba(205, 209, 215, 1);
+--btn-disabled-fill: rgba(249, 250, 251, 1);
+
+//Content Containers
+--content-main: #F9FAFB;
+--content-banners: #EEE8E1;
+--content-within-content: #DADADA;
+
+// Badges
+--badge-top-saved-fill: #FEF3C7;
+--badge-top-saved-txt: #D97706;
+--badge-earn-fill: #CCFBF1;
+--badge-earn-txt: #0D9488;
+--badge-exclusive-fill: #DBEAFE;
+--badge-exclusive-txt: #5048E5;
+--badge-timer-fill: #FFE4E6;
+--badge-timer-txt: #E11D48;
+
+// Forms
+--forms-placeholder-text: #C4C4C4;</code></pre>
+        </div>
+
+<!--        PADDING -->
+
+        <h2 class="content__row-title">Padding</h2>
+        <div class="content__group">
+            <pre><code class="language-css">--pad-section: 2rem 4rem;
+--pad-section-sml: 2rem 2.5rem;
+--pad-btn-reg: 1rem 2rem;
+--pad-btn-sm: .5rem 1rem;
+--pad-filter: 8px 8px;
+--pad-badge: .5px 8px;</code></pre>
+        </div>
+
+<!--        FONT WEIGHTS -->
+
+        <h2 class="content__row-title">Font Weights</h2>
+        <div class="content__group">
+            <pre><code class="language-css">--fw-air: 100;
+--fw-x-light: 200;
+--fw-light: 300;
+--fw-reg: 400;
+--fw-strong: 500;
+--fw-bold: 600;</code></pre>
+        </div>
+
+<!--        LETTER SPACING -->
+
+        <h2 class="content__row-title">Letter Spacing</h2>
+        <div class="content__group">
+            <pre><code class="language-css">--ls-titles: 0;
+--ls-standard: -2%;
+--ls-secondary-labels: -3%;</code></pre>
+        </div>
+
+<!--        FONT SIZING -->
+
+        <h2 class="content__row-title">Font Sizing</h2>
+        <div class="content__group">
+            <pre><code class="language-css">// Titles & Labels
+--fs-merchant-title-reg: 3rem;
+--fs-merchant-title-small: 2rem;
+--fs-sub-title-modal: 3rem;
+--fs-content-title: 2rem;
+--fs-secondary-labels: 1.5rem;
+--fs-tertiary-pre-title: 1.25rem;
+
+// Body & Paragraphs
+--fs-body-paragraphs-regular: 2rem;
+--fs-body-paragraph-small: 1.75rem;
+--fs-body-paragraphs-tiny: 1.5rem;
+
+// Navigation
+--fs-nav-active-inactive: 1.75rem;
+--fs-product-filters: 1.75rem;
+--fs-badges: 1.5rem;
+--fs-breadcrumbs: 1.375rem;
+
+// Buttons
+--fs-btn-reg: 2rem;
+--fs-btn-sm: 1.75rem;</code></pre>
+        </div>
+
+<!--        LINE HEIGHTS -->
+
+        <h2 class="content__row-title">Line Heights</h2>
+        <div class="content__group">
+            <pre><code class="language-css">--lh-body-paragraphs: 150%;</code></pre>
+        </div>
+
+<!--        LINE BOX SHADOWS -->
+
+        <h2 class="content__row-title">Box Shadowing</h2>
+        <div class="content__group">
+            <pre><code class="language-css">//Button Shadowing
+
+--btn-shadow: 0px 1px 2px 0px rgba(31, 41, 55, 0.08);</code></pre>
+        </div>
+
+<!--        RADII -->
+
+        <h2 class="content__row-title">Radii</h2>
+        <div class="content__group">
+            <pre><code class="language-css">--rad-std: 4px;</code></pre>
+        </div>
+
+    </section>
+</main>
+
+
+</body>
+</html>
