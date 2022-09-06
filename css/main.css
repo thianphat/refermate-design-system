@@ -829,7 +829,7 @@ hr {
   transition: all 0.2s;
 }
 .vert-nav__link:hover, .vert-nav__link:focus {
-  font-weight: 400;
+  font-weight: var(--fw-strong);
 }
 
 /*# sourceMappingURL=main.css.map */
