@@ -32,11 +32,28 @@
 </header>
 
 <main>
+
+<!--    Vertical Nav Bar-->
+    <div class="vert-nav__container">
+        <div class="vert-nav u-list">
+            <h2 class="vert-nav__item"><a href="#list1" class="vert-nav__link">Font Families</a></h2>
+            <h2 class="vert-nav__item"><a href="#list2" class="vert-nav__link">Colors</a></h2>
+            <h2 class="vert-nav__item"><a href="#list3" class="vert-nav__link">Padding</a></h2>
+            <h2 class="vert-nav__item"><a href="#list4" class="vert-nav__link">Font Weights</a></h2>
+            <h2 class="vert-nav__item"><a href="#list5" class="vert-nav__link">Letter Spacing</a></h2>
+            <h2 class="vert-nav__item"><a href="#list6" class="vert-nav__link">Font Sizing</a></h2>
+            <h2 class="vert-nav__item"><a href="#list7" class="vert-nav__link">Line Heights</a></h2>
+            <h2 class="vert-nav__item"><a href="#list8" class="vert-nav__link">Box Shadows</a></h2>
+            <h2 class="vert-nav__item"><a href="#list9" class="vert-nav__link">Radii</a></h2>
+        </div>
+    </div>
+
+
     <section class="content">
 
 <!--        FONT FAMILIES -->
 
-        <h2 class="content__row-title">Font Families</h2>
+        <h2 class="content__row-title" id="list1">Font Families</h2>
         <div class="content__group">
             <pre><code class="language-css">--ff-1: "Aeonik", sans-serif;
 --ff-2: "Roobert", sans-serif;
@@ -45,7 +62,7 @@
 
 <!--        COLORS -->
 
-        <h2 class="content__row-title">Colors</h2>
+        <h2 class="content__row-title" id="list2">Colors</h2>
         <div class="content__group">
             <pre><code class="language-css">//Primary
 --primary-brand: #F08B7C;
@@ -53,11 +70,11 @@
 --primary-white: #fff;
 
 //Titles, Subtitles, Paragraphs
---titles-subtitles-modaltitles: #190708;
---pre-title: #979797;
---body-paragraphs: #2D1416;
---text-links: #2664CB;
---old-prices: #c4c4c4;
+--fc-titles-subtitles-modaltitles: #190708;
+--fc-pre-title: #979797;
+--fc-body-paragraphs: #2D1416;
+--fc-text-links: #2664CB;
+--fc-old-prices: #c4c4c4;
 
 //Buttons
 --btn-primary-fill: rgba(25, 7, 8, 1);
@@ -91,7 +108,7 @@
 
 <!--        PADDING -->
 
-        <h2 class="content__row-title">Padding</h2>
+        <h2 class="content__row-title" id="list3">Padding</h2>
         <div class="content__group">
             <pre><code class="language-css">--pad-section: 2rem 4rem;
 --pad-section-sml: 2rem 2.5rem;
@@ -103,7 +120,7 @@
 
 <!--        FONT WEIGHTS -->
 
-        <h2 class="content__row-title">Font Weights</h2>
+        <h2 class="content__row-title" id="list4">Font Weights</h2>
         <div class="content__group">
             <pre><code class="language-css">--fw-air: 100;
 --fw-x-light: 200;
@@ -115,7 +132,7 @@
 
 <!--        LETTER SPACING -->
 
-        <h2 class="content__row-title">Letter Spacing</h2>
+        <h2 class="content__row-title" id="list5">Letter Spacing</h2>
         <div class="content__group">
             <pre><code class="language-css">--ls-titles: 0;
 --ls-standard: -2%;
@@ -124,7 +141,7 @@
 
 <!--        FONT SIZING -->
 
-        <h2 class="content__row-title">Font Sizing</h2>
+        <h2 class="content__row-title" id="list6">Font Sizing</h2>
         <div class="content__group">
             <pre><code class="language-css">// Titles & Labels
 --fs-merchant-title-reg: 3rem;
@@ -152,23 +169,23 @@
 
 <!--        LINE HEIGHTS -->
 
-        <h2 class="content__row-title">Line Heights</h2>
+        <h2 class="content__row-title" id="list7">Line Heights</h2>
         <div class="content__group">
             <pre><code class="language-css">--lh-body-paragraphs: 150%;</code></pre>
         </div>
 
-<!--        LINE BOX SHADOWS -->
+<!--        BOX SHADOWS -->
 
-        <h2 class="content__row-title">Box Shadowing</h2>
+        <h2 class="content__row-title" id="list8">Box Shadowing</h2>
         <div class="content__group">
             <pre><code class="language-css">//Button Shadowing
 
---btn-shadow: 0px 1px 2px 0px rgba(31, 41, 55, 0.08);</code></pre>
+--shad-btn: 0px 1px 2px 0px rgba(31, 41, 55, 0.08);</code></pre>
         </div>
 
 <!--        RADII -->
 
-        <h2 class="content__row-title">Radii</h2>
+        <h2 class="content__row-title" id="list9">Radii</h2>
         <div class="content__group">
             <pre><code class="language-css">--rad-std: 4px;</code></pre>
         </div>
