@@ -32,10 +32,12 @@
 </header>
 
 <main>
-    <!--    Primary Buttons -->
+    <!--                           -->
+    <!--    BASE & SIZE VARIATIONS -->
+    <!--                           -->
     <section class="content">
         <h2 class="content__row-title">Base & Size Variations</h2>
-        <aside class="content__note">
+        <div class="content__note content__group">
                         <pre><code class="language-css">/* Button Base */
 
 /*Classes*/
@@ -63,7 +65,12 @@ padding: var(--pad-btn-reg);</code></pre>
 /*Raw*/
 font-size: var(--fs-btn-sm);
 padding: var(--pad-btn-sm);</code></pre>
-        </aside>
+        </div>
+
+        <!--                           -->
+        <!--          STYLE VARIATIONS -->
+        <!--                           -->
+
         <h2 class="content__row-title">Style Variations</h2>
         <div class="content__group">
             <div class="content__card">
@@ -123,14 +130,13 @@ border: 1px solid var(--btn-second-txts-icons-outlines);
                 </ul>
             </div>
             <!--            Tertiary-->
-            <div class="content__group">
-                <div class="content__card">
-                    <h3 class="content__card-title u-margin-bottom-sm">Tertiary
-                    </h3>
-                    <div class="content__card-container u-margin-bottom-sm">
-                        <button class="u-btn u-btn--reg u-btn__tertiary">All Stores</button>
-                    </div>
-                    <pre><code class="language-css">/*Classes*/
+            <div class="content__card">
+                <h3 class="content__card-title u-margin-bottom-sm">Tertiary
+                </h3>
+                <div class="content__card-container u-margin-bottom-sm">
+                    <button class="u-btn u-btn--reg u-btn__tertiary">All Stores</button>
+                </div>
+                <pre><code class="language-css">/*Classes*/
 .u-btn__tertiary
 
 /*Raw*/
@@ -139,24 +145,22 @@ color: var(--btn-tertiary);
 font-weight: var(--fw-strong);
 &:hover {color: var(--text-links);}</code></pre>
 
-                    <p class="content__card-instructions">
-                        Use case:
-                    </p>
-                    <ul class="u-flex-column u-list--card content__card-instructions--steps">
-                        <li class="u-list__item">Third Links</li>
-                        <li class="u-list__item">Top Nav Bar</li>
-                        <li class="u-list__item">TBD</li>
-                    </ul>
-                </div>
+                <p class="content__card-instructions">
+                    Use case:
+                </p>
+                <ul class="u-flex-column u-list--card content__card-instructions--steps">
+                    <li class="u-list__item">Third Links</li>
+                    <li class="u-list__item">Top Nav Bar</li>
+                    <li class="u-list__item">TBD</li>
+                </ul>
             </div>
-            <div class="content__group">
-                <div class="content__card">
-                    <h3 class="content__card-title u-margin-bottom-sm">Destructive
-                    </h3>
-                    <div class="content__card-container u-margin-bottom-sm">
-                        <button class="u-btn u-btn__destructive u-btn--reg">Delete</button>
-                    </div>
-                    <pre><code class="language-css">/*Classes*/
+        <div class="content__card">
+            <h3 class="content__card-title u-margin-bottom-sm">Destructive
+            </h3>
+            <div class="content__card-container u-margin-bottom-sm">
+                <button class="u-btn u-btn__destructive u-btn--reg">Delete</button>
+            </div>
+            <pre><code class="language-css">/*Classes*/
 .u-btn__destructive
 
 /*Raw*/
@@ -171,24 +175,21 @@ background-color: var(--btn-destructive-txt-icon-outline);
 color: var(--btn-destructive-fill);
 }</code></pre>
 
-                    <p class="content__card-instructions">
-                        Use case:
-                    </p>
-                    <ul class="u-flex-column u-list--card content__card-instructions--steps">
-                        <li class="u-list__item">Delete Items & Account</li>
-                    </ul>
-                </div>
-                <!--            Add above this line-->
+            <p class="content__card-instructions">
+                Use case:
+            </p>
+            <ul class="u-flex-column u-list--card content__card-instructions--steps">
+                <li class="u-list__item">Delete Items & Account</li>
+            </ul>
+        </div>
+        <!--        Disabled Buttons-->
+        <div class="content__card">
+            <h3 class="content__card-title u-margin-bottom-sm">Disabled
+            </h3>
+            <div class="content__card-container u-margin-bottom-sm">
+                <button class="u-btn u-btn u-btn__disabled u-btn--reg">Log in to Activate</button>
             </div>
-            <!--        Disabled Buttons-->
-            <div class="content__group">
-                <div class="content__card">
-                    <h3 class="content__card-title u-margin-bottom-sm">Disabled
-                    </h3>
-                    <div class="content__card-container u-margin-bottom-sm">
-                        <button class="u-btn u-btn u-btn__disabled u-btn--reg">Log in to Activate</button>
-                    </div>
-                    <pre><code class="language-css">/*Classes*/
+            <pre><code class="language-css">/*Classes*/
 .u-btn__disabled
 
 /*Raw*/
@@ -202,16 +203,15 @@ border: 1px solid transparent;
 border: 1px solid var(--btn-disabled-txt-icon);
 }</code></pre>
 
-                    <p class="content__card-instructions">
-                        Use case:
-                    </p>
-                    <ul class="u-flex-column u-list--card content__card-instructions--steps">
-                        <li class="u-list__item">Gated CTAs</li>
-                        <li class="u-list__item">Logged Out Refer Buttons</li>
-                        <li class="u-list__item">TBD</li>
-                    </ul>
-                </div>
-            </div>
+            <p class="content__card-instructions">
+                Use case:
+            </p>
+            <ul class="u-flex-column u-list--card content__card-instructions--steps">
+                <li class="u-list__item">Gated CTAs</li>
+                <li class="u-list__item">Logged Out Refer Buttons</li>
+                <li class="u-list__item">TBD</li>
+            </ul>
+        </div>
         </div>
         <h2 class="content__row-title">Icon Variations</h2>
         <div class="content__group">
@@ -220,8 +220,9 @@ border: 1px solid var(--btn-disabled-txt-icon);
                 </h3>
                 <div class="content__card-container u-margin-bottom-sm">
                     <button class="u-btn u-btn--reg u-btn__primary"><img class="u-btn__icon--reg"
-                                                                              src="img/icons/lightning.svg"
-                                                      alt="Button Icon Left">Activate</button>
+                                                                         src="img/icons/lightning.svg"
+                                                                         alt="Button Icon Left">Activate
+                    </button>
                 </div>
                 <pre><code class="language-css">/*Classes*/
 .u-btn__disabled
